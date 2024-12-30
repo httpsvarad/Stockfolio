@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tv-widget-chart__copyrightingContainer {
+    display: none !important;
+}
