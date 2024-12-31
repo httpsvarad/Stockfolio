@@ -98,21 +98,18 @@ const UserPortfolio = () => {
                     <table className="table w-full">
                         <thead>
                             <tr>
+                                <th>Actions</th>
                                 <th>Stock Name</th>
                                 <th>Quantity</th>
                                 <th>Current Price</th>
                                 <th>Total Value</th>
-                                <th>Actions</th>
+
                             </tr>
                         </thead>
                         <tbody>
                             {!isLoading && stocks.length > 0 ? (
                                 stocks.map((stock) => (
                                     <tr key={stock.id}>
-                                        <td>{stock.name}</td>
-                                        <td>{stock.quantity}</td>
-                                        <td>₹{stock.price.toFixed(2)}</td>
-                                        <td>₹{(stock.quantity * stock.price).toFixed(2)}</td>
                                         <td>
                                             <div className='flex'>
                                                 <button
@@ -129,6 +126,11 @@ const UserPortfolio = () => {
                                                 </button>
                                             </div>
                                         </td>
+                                        <td>{stock.name}</td>
+                                        <td>{stock.quantity}</td>
+                                        <td>₹{stock.price.toFixed(2)}</td>
+                                        <td>₹{(stock.quantity * stock.price).toFixed(2)}</td>
+
                                     </tr>
                                 ))
                             ) : (
