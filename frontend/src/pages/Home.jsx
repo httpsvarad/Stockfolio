@@ -3,7 +3,7 @@ import TradingViewWidget from "../components/TradingViewWidget";
 
 const Home = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100 text-gray-800 p-10">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100 text-gray-800 p-7">
             {/* Header Section */}
             <header className="text-center mb-12">
                 <h1 className="text-5xl font-extrabold mb-6 leading-tight text-gray-800">
@@ -26,7 +26,7 @@ const Home = () => {
             </div>
 
             {/* Trading Widget Section */}
-            <div className="w-full max-w-5xl bg-white rounded-xl shadow-lg p-6">
+            <div className="w-full max-w-5xl bg-white rounded-xl shadow-lg p-5">
                 <h2 className="text-2xl font-bold text-gray-700 mb-4">
                     Real-Time Market Analysis
                 </h2>

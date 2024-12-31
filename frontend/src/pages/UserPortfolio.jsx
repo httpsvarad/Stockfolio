@@ -24,7 +24,7 @@ const UserPortfolio = () => {
     const handleDeleteStock = async (stockId) => {
         await deleteStock(stockId);
         getUserStocks(user.id);
-        toast.error("Stock Deleted", { position: "top-center"  })
+        toast.error("Stock Deleted", { position: "top-center" })
     };
 
     const handleLogout = () => {
@@ -47,8 +47,7 @@ const UserPortfolio = () => {
             <div className="mr-3 ml-2 h-20 items-center flex">
                 <div className="navbar bg-base-100">
                     <div className="flex-1">
-                        <h1 className="text-xl font-semibold my-auto">📈</h1>
-                        <span className="text-xl ml-2 font-semibold my-auto hidden md:block">Stockfolio</span>
+                        <h1 className="text-xl font-semibold my-auto hidden md:block">📈 Stockfolio</h1>
                     </div>
 
                     <div className="gap-2">
@@ -116,18 +115,18 @@ const UserPortfolio = () => {
                                         <td>₹{(stock.quantity * stock.price).toFixed(2)}</td>
                                         <td>
                                             <div className='flex'>
-                                            <button
-                                                className="btn btn-error text-white btn-sm"
-                                                onClick={() => handleDeleteStock(stock.id)}
-                                            >
-                                                Delete
-                                            </button>
-                                            <button
-                                                className="btn btn-sm bg-amber-300 hover:bg-amber-400 ml-3"
-                                                onClick={() => handleEditStock(stock)}
-                                            >
-                                                Edit
-                                            </button>
+                                                <button
+                                                    className="btn btn-error text-white btn-sm"
+                                                    onClick={() => handleDeleteStock(stock.id)}
+                                                >
+                                                    Delete
+                                                </button>
+                                                <button
+                                                    className="btn btn-sm bg-amber-300 hover:bg-amber-400 ml-3"
+                                                    onClick={() => handleEditStock(stock)}
+                                                >
+                                                    Edit
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>

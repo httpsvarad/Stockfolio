@@ -18,7 +18,7 @@ const Header = ({ handleSearch, setSearchQuery }) => {
         <div className='mr-3 ml-3 h-20 items-center flex'>
             <div className="navbar bg-base-100">
                 <div className="flex-1">
-                    <h1 className="text-xl font-semibold my-auto">📈</h1><span className='text-xl ml-2 font-semibold my-auto hidden md:block'>Stockfolio</span>
+                    <h1 className="text-xl font-semibold my-auto hidden md:block">📈 Stockfolio</h1>
                 </div>
                 <div className="flex-none gap-3">
                     <form onSubmit={handleSearch}>
