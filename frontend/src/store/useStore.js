@@ -1,7 +1,9 @@
 import { create } from "zustand";
 import axios from "axios";
 axios.defaults.withCredentials = true;
+const BASE_URL = "https://outstanding-heart-production.up.railway.app";
 const useStore = create((set) => ({
+
     user: null,
     message: null,
     loading: false,
@@ -11,7 +13,7 @@ const useStore = create((set) => ({
     register: async (email, password, name) => {
         set({ loading: true, message: null });
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/register", { email, password, name });
+            const response = await axios.post(`${BASE_URL}/api/auth/register`, { email, password, name });
             set({ user: response.data, loading: false });
 
         } catch (error) {
@@ -23,7 +25,7 @@ const useStore = create((set) => ({
     login: async (email, password) => {
         set({ loading: true, message: null });
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/login", { email, password });
+            const response = await axios.post(`${BASE_URL}/api/auth/login`, { email, password });
             set({ user: response.data, loading: false });
 
         } catch (error) {
@@ -35,7 +37,7 @@ const useStore = create((set) => ({
     getUserStocks: async (userid) => {
         set({ isLoading: true });
         try {
-            const response = await axios.get(`http://localhost:8080/api/stocks/${userid}`);
+            const response = await axios.get(`${BASE_URL}/api/stocks/${userid}`);
             set({ stocks: response.data, isLoading: false });
 
         } catch (error) {
@@ -47,7 +49,7 @@ const useStore = create((set) => ({
     deleteStock: async (stockId) => {
         set({ isLoading: true });
         try {
-            await axios.delete(`http://localhost:8080/api/stocks/${stockId}`);
+            await axios.delete(`${BASE_URL}/api/stocks/${stockId}`);
             set({ isLoading: false });
 
         } catch (error) {
@@ -60,7 +62,7 @@ const useStore = create((set) => ({
 
         set({ isLoading: true });
         try {
-            await axios.post("http://localhost:8080/api/stocks", { user, name, quantity, price });
+            await axios.post(`${BASE_URL}/api/stocks`, { user, name, quantity, price });
             set({ isLoading: false });
 
         } catch (error) {
@@ -72,7 +74,7 @@ const useStore = create((set) => ({
     updateStock: async (id, quantity, name, price, user) => {
         set({ isLoading: true });
         try {
-            await axios.put(`http://localhost:8080/api/stocks`, { id, quantity, name, price, user });
+            await axios.put(`${BASE_URL}/api/stocks`, { id, quantity, name, price, user });
             set({ isLoading: false, message: "Stock Updated!" });
 
         } catch (error) {

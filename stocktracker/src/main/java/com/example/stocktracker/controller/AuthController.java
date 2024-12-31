@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = "https://stockfolio-ochre.vercel.app/", allowCredentials = "true")
 public class AuthController {
     @Autowired
     private AuthService authService;

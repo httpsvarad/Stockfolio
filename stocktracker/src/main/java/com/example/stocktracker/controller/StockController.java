@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/stocks")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = "https://stockfolio-ochre.vercel.app/", allowCredentials = "true")
 public class StockController {
     @Autowired
     private StockService stockService;
