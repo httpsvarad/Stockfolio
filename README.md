@@ -32,7 +32,7 @@ Stockfolio is a full-stack web application that allows users to track their stoc
 
 ## Screenshots 🚀
 
-![Screenshot](screenshots/homepage.png)
+![Screenshot](screenshots/homepage.png "Landing Page")
 
 ![Screenshot](screenshots/search.png)
 
