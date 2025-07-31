@@ -35,22 +35,18 @@ Stockfolio is a full-stack web application that allows users to track their stoc
 #### 🏠 Landing Page
 ![Landing Page](screenshots/homepage.png)
 
---
 
 #### 🔍 Search Stocks
 ![Search Stocks](screenshots/search.png)
 
---
 
 #### 📊 Portfolio View
 ![Portfolio View](screenshots/portfolio.png)
 
---
 
 #### ✏️ Edit Stock Details
 ![Edit Stock](screenshots/editstock.png)
 
---
 
 #### 🔐 Login Page
 ![Login Page](screenshots/login.png)
