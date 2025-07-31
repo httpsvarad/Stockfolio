@@ -30,9 +30,17 @@ Stockfolio is a full-stack web application that allows users to track their stoc
 - **Real-time Data:**  
   - Rapid API 🌍 (for stock prices and news)
 
-## Screenshots ✨
+## Screenshots 🚀
 
 ![Screenshot](screenshots/homepage.png)
+
+![Screenshot](screenshots/search.png)
+
+![Screenshot](screenshots/portfolio.png)
+
+![Screenshot](screenshots/editstock.png)
+
+![Screenshot](screenshots/login.png)
 
 ## Demo 🎬
 You can check out the live application here: https://stockfolio-ochre.vercel.app/
