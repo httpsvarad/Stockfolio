@@ -32,15 +32,29 @@ Stockfolio is a full-stack web application that allows users to track their stoc
 
 ## Screenshots 🚀
 
-![Screenshot](screenshots/homepage.png "Landing Page")
+### 🏠 Landing Page
+![Landing Page](screenshots/homepage.png)
 
-![Screenshot](screenshots/search.png)
+---
 
-![Screenshot](screenshots/portfolio.png)
+### 🔍 Search Stocks
+![Search Stocks](screenshots/search.png)
 
-![Screenshot](screenshots/editstock.png)
+---
 
-![Screenshot](screenshots/login.png)
+### 📊 Portfolio View
+![Portfolio View](screenshots/portfolio.png)
+
+---
+
+### ✏️ Edit Stock Details
+![Edit Stock](screenshots/editstock.png)
+
+---
+
+### 🔐 Login Page
+![Login Page](screenshots/login.png)
+
 
 ## Demo 🎬
 You can check out the live application here: https://stockfolio-ochre.vercel.app/
